@@ -1,0 +1,28 @@
+{
+  "name": "api-tarefas-2021",
+  "version": "1.0.0",
+  "description": "API para aplicação Gerenciadora de Tarefas",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielEvaristo432/api-tarefas-2021.git"
+  },
+  "keywords": [
+    "api",
+    "tarefas",
+    "2021"
+  ],
+  "author": "Gabriel Evaristo Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GabrielEvaristo432/api-tarefas-2021/issues"
+  },
+  "homepage": "https://github.com/GabrielEvaristo432/api-tarefas-2021#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

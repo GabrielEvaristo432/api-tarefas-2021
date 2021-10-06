@@ -1,3 +1,7 @@
+#MongoDB (Docker)
+data/
+logs/
+
 # Logs
 logs
 *.log
