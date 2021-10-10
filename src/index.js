@@ -1,27 +1,15 @@
 const express = require ('express')
+require('dotenv').config()
 
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // Rotas
+const router = require('./routes')
+app.use('/api/v1/', router)
 
-app.get('/produtos', (req, res) => {
+app.listen(process.env.PORT, () => {
 
-    const dados = [
-        {'id': 1, 'descrição': 'Espada reta de Astora', 'quantidade': 2},
-        {'id': 2, 'descrição': 'Espada grande', 'quantidade': 1},
-        {'id': 3, 'descrição': 'Espada quebrada', 'quantidade': 3}
-    ]
-
-    res.status(200)
-    res.send(dados)
-    console.log('Consultando na rota /produtos')
-})
-
-const port = 3007
-
-app.listen(port, () => {
-
-    console.log(`Servidor em funcionamento na porta ${port}`)
+    console.log(`Servidor em funcionamento na porta ${process.env.PORT}`)
 })
